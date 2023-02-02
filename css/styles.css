@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.cdnfonts.com/css/space-mono");
+
+:root {
+  --button-color: #ffffff;
+  --footer-color: #bdbdbd;
+  --footer-font: "Montserrat", sans-serif;
+  --text-color: #333333;
+  --text-font: "Space Mono", monospace;
+  --title-font: "Inconsolata", monospace;
+}
+
+body {
+  margin: 1.25rem 0 1.5rem 1.5rem;
+}
+
+/* MOBILE SCREENS */
+.found {
+  color: var(--text-color);
+  font-family: var(--title-font);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.08rem;
+  line-height: 1.5625rem;
+  margin-bottom: 4rem;
+}
+
+.scarecrow {
+  margin: 0 2.75rem 3.75rem 1.25rem;
+  width: -webkit-fill-available;
+  width: -moz-available;
+}
+
+.news {
+  color: var(--text-color);
+  font-family: var(--text-font);
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4.4375rem;
+  letter-spacing: -0.035rem;
+  margin: 0 0 1.875rem;
+}
+
+.page {
+  color: #4f4f4f;
+  font-family: var(--text-font);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6875rem;
+  letter-spacing: -0.035em;
+  margin: 0 1.5rem 4.125rem 0;
+}
+
+button {
+  background-color: var(--text-color);
+  color: var(--button-color);
+  font-family: "Space Mono";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  height: 4.25rem;
+  letter-spacing: -0.035em;
+  line-height: 1.3125rem;
+  margin-bottom: 7.125rem;
+  width: 13.5rem;
+}
+
+footer {
+  color: var(--footer-color);
+  font-family: var(--footer-font);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.0625rem;
+  text-align: center;
+}
+
+footer a {
+  color: var(--footer-color);
+}
+
+footer a:hover {
+  color: var(--text-color);
+}
+
+/* LAPTOP SCREENS */
+
+@media only screen and (min-width: 1000px) {
+  body {
+    margin: 1.5rem 0 1.5rem 2.8125rem;
+  }
+
+  .found {
+    margin-bottom: 11rem;
+  }
+
+  .error-page {
+    display: flex;
+  }
+
+  .scarecrow {
+    height: 400px;
+    margin: 0 3.75rem 0 0;
+    width: 540px;
+  }
+
+  .news {
+    font-size: 3.5rem;
+    line-height: 4.9375rem;
+  }
+  
+  .page {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin: 0 1.5rem 3.125rem 0;
+    width: 380px;
+  }
+}
+
+@media only screen and (min-width: 1320px) {
+  .found {
+    margin-bottom: 12.5rem;
+  }
+
+  .scarecrow {
+    height: 450px;
+    margin: 0 7.42375rem 0 0;
+    width: 540px;
+  }
+
+  .news {
+    font-size: 4rem;
+    line-height: 5.9375rem;
+    margin-bottom: 2.25rem;
+    margin-right: 7.4375rem;
+  }
+
+  .page {
+    margin: 0 1.5rem 4rem 0;
+  }
+  
+  button {
+    margin-bottom: 11.125rem;
+  }
+}
